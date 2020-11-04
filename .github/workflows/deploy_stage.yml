@@ -39,5 +39,5 @@ jobs:
           command: deploy
           AIO_RUNTIME_AUTH: ${{ secrets.AIO_RUNTIME_AUTH_STAGE }}
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
-          env:
-            MY_SECRET: ${{ secrets.MY_SECRET_STAGE }}
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET_STAGE }}

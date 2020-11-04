@@ -42,9 +42,7 @@ async function main (params) {
     // extract the user Bearer token from the Authorization header
     const token = getBearerToken(params)
 
-    // replace this with the api you want to access
-    const apiEndpoint = 'https://adobeioruntime.net/api/v1/api-docs'
-
+    // just reading some parameter passed to the action in the manifest.yml either from the local .env or from a Github secret through a Github action
     const res = { secret: params.MY_SECRET }
 
     const response = {
